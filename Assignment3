@@ -1,3 +1,5 @@
 From the Developer's perspective the Api is easy to read and process. But a small suggestion from my side is if the api data contain little information about vehicle like name with ID it will be helpful to combine mutliple spectrum datas in single api instead of multiple api's. For example
 
 {"velocity":78.19188513280133,"altitude":-41479.62054802964,"temperature":4.3878304623667646,"statusMessage":"Current altitude and velocity within expected parameters.","isAscending":true,"isActionRequired":false,"Name":'LaunchVehicle001'}
+
+
