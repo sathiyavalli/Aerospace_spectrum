@@ -41,15 +41,15 @@ function StaticChart({ data, onClick }) {
 
 // Component for live data
 function LiveChart({ data }) {
-  const [criticalAction, setCriticalAction] = useState(false);
+  const [criticalAction, setCriticalAction] = useState(true);
   const [responseData, setResponseData] = useState(null);
 
   const handleActionResponse = async () => {
-    // Your code for handling action response
+    // code for handling action response
+    alert('data has been sent to the user');
     try {
       const dataToSend = [
-        { action: "check critical status" }, // First set of data // Second set of data
-        // Add more sets of data as needed
+        { action: "check critical status" }, 
       ];
 
       const response = await axios.post(
@@ -65,7 +65,7 @@ function LiveChart({ data }) {
     if (data.length > 0 && data[0].isCriticalActionRequired) {
       setCriticalAction(true);
     } else {
-      setCriticalAction(false);
+      setCriticalAction(true);
     }
   }, [data]);
 
